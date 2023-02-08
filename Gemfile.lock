@@ -101,6 +101,7 @@ GEM
     crack (0.4.5)
       rexml
     crass (1.0.6)
+    date (3.3.3)
     devise (4.8.1)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -180,6 +181,15 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.15.0)
     msgpack (1.5.2)
+    net-imap (0.3.4)
+      date
+      net-protocol
+    net-pop (0.1.2)
+      net-protocol
+    net-protocol (0.2.1)
+      timeout
+    net-smtp (0.3.3)
+      net-protocol
     nilify_blanks (1.4.0)
       activerecord (>= 4.0.0)
       activesupport (>= 4.0.0)
@@ -334,6 +344,7 @@ GEM
       activerecord (>= 5.2)
     thor (1.2.1)
     tilt (2.0.10)
+    timeout (0.3.1)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.1.0)
@@ -373,6 +384,9 @@ DEPENDENCIES
   jb (~> 0.8.0)
   letter_opener (~> 1.8.1)
   listen (>= 3.0.5, < 3.8)
+  net-imap
+  net-pop
+  net-smtp
   nilify_blanks (~> 1.4)
   pagy (~> 5.10)
   pg (~> 1.4.1)

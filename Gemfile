@@ -46,6 +46,10 @@ gem 'sentry-rails'
 gem 'sentry-ruby'
 gem 'sentry-sidekiq'
 
+gem 'net-smtp', require: false
+gem 'net-imap', require: false
+gem 'net-pop', require: false
+
 group :development, :test do
   gem 'bullet', '~> 7.0.2'
   gem 'byebug', '>= 11.0.1', platforms: %i[mri mingw x64_mingw]
